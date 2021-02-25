@@ -1,9 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 import { ProductosComponent } from './pages/productos/productos.component';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +15,8 @@ import { ProductosComponent } from './pages/productos/productos.component';
     ProductosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
